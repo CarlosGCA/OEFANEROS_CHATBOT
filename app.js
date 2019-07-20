@@ -3,6 +3,7 @@ var express        = require('express'),
     http           = require('http'),
     request        = require('request'),
     app            = express(),
+    fs             = require('fs'),
     token          = "EAAFCnrGcRvwBAGPZCi5KiNjStZAEru3nqCWdi6rqbjgiSTXELv0EjVCB4INiItqlTbXOlMpNyTO50Kj1WOrkUo4Y1KDK5YrCVg3DKxOj4iA6VXZBDfg6WhZCQjIc3zKPJYRrJJJKJZBkGTT2InwJLg9DZCCkSkxAgKWvR4ZA5qG8AZDZD";
     sslOpts        = {
       "key":fs.readFileSync("/etc/letsencrypt/live/ofeliabot-oefa.ml/privkey.pem"),
