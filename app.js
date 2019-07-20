@@ -4,11 +4,15 @@ var express        = require('express'),
     request        = require('request'),
     app            = express(),
     token          = "EAAFCnrGcRvwBAGPZCi5KiNjStZAEru3nqCWdi6rqbjgiSTXELv0EjVCB4INiItqlTbXOlMpNyTO50Kj1WOrkUo4Y1KDK5YrCVg3DKxOj4iA6VXZBDfg6WhZCQjIc3zKPJYRrJJJKJZBkGTT2InwJLg9DZCCkSkxAgKWvR4ZA5qG8AZDZD";
+    sslOpts        = {
+      "key":fs.readFileSync("/etc/letsencrypt/live/ofeliabot-oefa.ml/privkey.pem"),
+      "cert":fs.readFileSync('/etc/letsencrypt/live/ofeliabot-oefa.ml/fullchain.pem')
+    }
 
 app.use(bodyParser.json());
 
 // set port
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 80);
 
 // create a health check endpoint
 app.get('/health', function(req, res) {
