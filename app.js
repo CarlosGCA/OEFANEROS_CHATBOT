@@ -33,8 +33,8 @@ app.post('/fb', function(req, res){
 });
 
 // start the server
-http.createServer(sslOpts, app).listen(app.get('port'), function(){
-    console.log('Express server listening on port ' + app.get('port'));
+https.createServer(sslOpts, app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
 });
 
 app.get('/fb', function(req, res) {
