@@ -14,7 +14,7 @@ var express        = require('express'),
 app.use(bodyParser.json());
 
 // set port
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 443);
 
 // create a health check endpoint
 app.get('/health', function(req, res) {
