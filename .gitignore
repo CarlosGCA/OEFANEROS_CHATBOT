@@ -2,3 +2,5 @@ node_modules
 package-lock.json
 OfeliaServerKey.pem
 ngrok.exe
+base/node_modules
+base/package-lock.json
