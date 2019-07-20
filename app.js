@@ -1,6 +1,7 @@
 var express        = require('express'),
     bodyParser     = require('body-parser'),
     http           = require('http'),
+    https           = require('https'),
     request        = require('request'),
     app            = express(),
     fs             = require('fs'),
@@ -33,7 +34,7 @@ app.post('/fb', function(req, res){
 });
 
 // start the server
-http.createServer(sslOpts, app).listen(app.get('port'), function(){
+https.createServer(sslOpts, app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
