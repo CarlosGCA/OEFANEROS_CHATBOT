@@ -3,7 +3,7 @@ var express        = require('express'),
     http           = require('http'),
     request        = require('request'),
     app            = express(),
-    token          = "EAAJ50L2SyPABANacjqRDcNabB4Y9koINvHerYmTqQRYi7r9ggk5BhVw7Mu4vdMxxsekHOKq498V2X0JsgE1gGFCIbYEsxrSFHIlTIrcqCVxjiZBHe5BRSrYZAjd4NMp0Tl8jeej4E9NINzoXNcqE1eSTOKLnZCjC5tzWCarpgZDZD";
+    token          = "EAAFCnrGcRvwBAGPZCi5KiNjStZAEru3nqCWdi6rqbjgiSTXELv0EjVCB4INiItqlTbXOlMpNyTO50Kj1WOrkUo4Y1KDK5YrCVg3DKxOj4iA6VXZBDfg6WhZCQjIc3zKPJYRrJJJKJZBkGTT2InwJLg9DZCCkSkxAgKWvR4ZA5qG8AZDZD";
 
 app.use(bodyParser.json());
 
